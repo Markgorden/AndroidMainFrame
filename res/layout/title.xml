@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCommenTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="#ff252931"
+    android:padding="0.0px" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/status_on" />
+    
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0dip"
+    	android:src="@drawable/set_more"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:includeFontPadding="false"/>
+        <!-- 资源文件XML与图片，不能同名 -->
+
+    <TextView
+        android:id="@+id/ivTitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Mark Gorden"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+    
+    <ImageView
+        android:id="@+id/ivTitleLoading"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@anim/loading" />
+
+</RelativeLayout>
